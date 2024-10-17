@@ -68,7 +68,6 @@ app.get('/incidents/:id', (req: Request, res: Response) => {
   if (incident) {
     res.status(200).json(incident);
   } else {
-    // res.sendStatus(400);
     res.status(400).json({ error: 'Incident not found' });
   }
 });
